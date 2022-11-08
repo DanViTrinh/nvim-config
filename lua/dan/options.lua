@@ -13,4 +13,10 @@ vim.opt.mouse ="a"
 
 vim.opt.colorcolumn = "80"
 
+
+vim.wo.fillchars = 'eob: ' -- to remove tilde 
+
+
 vim.opt.shell ="pwsh"
+
+

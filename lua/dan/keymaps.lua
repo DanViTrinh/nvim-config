@@ -19,5 +19,22 @@ vim.g.maplocalleader = " "
 -- insert mode
 keymap("i","jk","<ESC>",opts)
 
+-- fix autopair
+--keymap("i", "<A-7>","{",opts) -- remapping alt keys to {
+--keymap("i", "<A-0>","}",opts) -- remapping alt keys to }
+--keymap("i", "<A-8>","[",opts) -- remapping alt keys to [
+--keymap("i", "<A-9>","]",opts) -- remapping alt keys to ]
+
+
+
+
+
 -- normal
 keymap("n" , "<Leader>e", ":NvimTreeToggle<CR>",opts)
+
+-- https://www.reddit.com/r/neovim/comments/rh0ohq/nvimcmp_temporarily_disable_autocompletion/
+-- look at this: 
+--https://github.com/hrsh7th/nvim-cmp/issues/429
+keymap("n", "<Leader>tc",":lua require('cmp').setup {enabled = false}<CR>",opts)
+
+
