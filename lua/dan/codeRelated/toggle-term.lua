@@ -13,3 +13,10 @@ for option, value in pairs(powershell_options) do
   vim.opt[option] = value
 end
 
+require("toggleterm").setup{
+  -- size can be a number or function which is passed the current terminal
+  size = 40,
+  direction = "vertical",
+  open_mapping = [[<c-t>]],
+
+}
