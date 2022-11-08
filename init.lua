@@ -7,6 +7,7 @@ require "dan.aesthetics.generic"
 require "dan.coderelated.toggle-term"
 require "dan.coderelated.cmp"
 require "dan.coderelated.comment"
+require "dan.lsp"
 
 -- themes
 -- vim.cmd "colorscheme onedark"
