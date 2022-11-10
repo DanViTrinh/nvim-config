@@ -1,4 +1,4 @@
--- https://github.com/LunarVim/Neovim-from-scratch/blob/master/lua/user/keymaps.lua
+--https://github.com/LunarVim/Neovim-from-scratch/blob/master/lua/user/keymaps.lua
 local opts = {noremap = true , silent = true}
 
 local keymap = vim.api.nvim_set_keymap
@@ -32,6 +32,13 @@ keymap("i", "'","|",opts)
 keymap("i", "@","'",opts)
 keymap("i", "™","@",opts)
 
+-- fix autopair find a better solution maybe? 
+-- google tui input and several mod at once 
+-- https://stackoverflow.com/questions/1456026/can-vim-commands-be-mapped-to-key-combinations-with-1-modifier-e-g-ctrl-alt-v
+keymap("i", "<A-7>","{}<Left>",opts) -- remapping alt keys to {
+keymap("i", "<A-0>","}",opts) -- remapping alt keys to }
+keymap("i", "<A-8>","[]<Left>",opts) -- remapping alt keys to [
+keymap("i", "<A-9>","]",opts) -- remapping alt keys to ]
 
 
 
