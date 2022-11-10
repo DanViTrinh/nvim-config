@@ -46,7 +46,16 @@ keymap("n", "<Leader>tc",":lua require('cmp').setup {enabled = false}<CR>",opts)
 -- quit 
 keymap("n", "<Leader>w",":w<CR>",opts)
 keymap("n", "<Leader>q",":q<CR>",opts)
+
+--tab and windows 
 keymap("n", "<Leader>h",":bp<CR>",opts)
 keymap("n", "<Leader>l",":bn<CR>",opts)
+keymap('n', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
+keymap('n', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 
+--terminal (toggle term )
+keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
+keymap('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 
+-- to escape terminal 
+vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
