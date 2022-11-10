@@ -8,7 +8,7 @@ require "dan.coderelated.toggle-term"
 require "dan.coderelated.cmp"
 require "dan.coderelated.comment"
 -- TODO: uncomment when fixed
---require "dan.lsp"
+require "dan.lsp"
 
 -- themes
 -- vim.cmd "colorscheme onedark"
