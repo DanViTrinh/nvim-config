@@ -25,6 +25,12 @@ keymap("i","jk","<ESC>",opts)
 --keymap("i", "<A-8>","[",opts) -- remapping alt keys to [
 --keymap("i", "<A-9>","]",opts) -- remapping alt keys to ]
 
+-- remap map keys to get used to 
+keymap("i", "|","{}<Left>",opts) -- remapping alt keys to {
+keymap("i", "≈","}",opts) -- remapping alt keys to }
+keymap("i", "'","|",opts)
+keymap("i", "@","'",opts)
+keymap("i", "™","@",opts)
 
 
 
@@ -36,5 +42,11 @@ keymap("n" , "<Leader>e", ":NvimTreeToggle<CR>",opts)
 -- look at this: 
 --https://github.com/hrsh7th/nvim-cmp/issues/429
 keymap("n", "<Leader>tc",":lua require('cmp').setup {enabled = false}<CR>",opts)
+
+-- quit 
+keymap("n", "<Leader>w",":w<CR>",opts)
+keymap("n", "<Leader>q",":q<CR>",opts)
+keymap("n", "<Leader>h",":bp<CR>",opts)
+keymap("n", "<Leader>l",":bn<CR>",opts)
 
 
