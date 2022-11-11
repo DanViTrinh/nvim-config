@@ -26,11 +26,11 @@ keymap("i","jk","<ESC>",opts)
 --keymap("i", "<A-9>","]",opts) -- remapping alt keys to ]
 
 -- remap map keys to get used to 
-keymap("i", "|","{}<Left>",opts) -- remapping alt keys to {
-keymap("i", "≈","}",opts) -- remapping alt keys to }
-keymap("i", "'","|",opts)
-keymap("i", "@","'",opts)
-keymap("i", "™","@",opts)
+-- keymap("i", "|","{}<Left>",opts) -- remapping alt keys to {
+-- keymap("i", "≈","}",opts) -- remapping alt keys to }
+-- keymap("i", "'","|",opts)
+-- keymap("i", "@","'",opts)
+-- keymap("i", "™","@",opts)
 
 -- fix autopair find a better solution maybe? 
 -- google tui input and several mod at once 
@@ -59,6 +59,7 @@ keymap("n", "<Leader>h",":bp<CR>",opts)
 keymap("n", "<Leader>l",":bn<CR>",opts)
 keymap('n', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
 keymap('n', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
+vim.g.winresizer_start_key = "<Leader>m"; -- window resizer start key 
 
 --terminal (toggle term )
 keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
