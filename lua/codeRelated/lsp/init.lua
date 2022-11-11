@@ -5,5 +5,5 @@ if not status_ok then
   return
 end
 
-require "dan.lsp.mason"
-require("dan.lsp.handlers").setup()
+require "coderelated.lsp.mason"
+require("coderelated.lsp.handlers").setup()
