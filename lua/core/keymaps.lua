@@ -37,7 +37,7 @@ keymap("i","jk","<ESC>",opts)
 -- https://stackoverflow.com/questions/1456026/can-vim-commands-be-mapped-to-key-combinations-with-1-modifier-e-g-ctrl-alt-v
 keymap("i", "<A-7>","{}<Left>",opts) -- remapping alt keys to {
 keymap("i", "<A-0>","}",opts) -- remapping alt keys to }
-keymap("i", "<A-8>","[]<Left>",opts) -- remapping alt keys to [
+keymap("i", "<A-8>","[",opts) -- remapping alt keys to [
 keymap("i", "<A-9>","]",opts) -- remapping alt keys to ]
 
 
@@ -59,7 +59,7 @@ keymap("n", "<Leader>h",":bp<CR>",opts)
 keymap("n", "<Leader>l",":bn<CR>",opts)
 keymap('n', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
 keymap('n', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
-vim.g.winresizer_start_key = "<Leader>m"; -- window resizer start key 
+--vim.g.winresizer_start_key = "<Leader>m"; -- window resizer start key 
 
 --terminal (toggle term )
 keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
