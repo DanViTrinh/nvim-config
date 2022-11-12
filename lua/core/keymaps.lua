@@ -67,3 +67,7 @@ keymap('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 
 -- to escape terminal 
 vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+
+keymap("n", "<A-7>","{",opts) -- remapping alt keys to {
+keymap("n", "<A-0>","}",opts) -- remapping alt keys to }
+
