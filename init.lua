@@ -12,5 +12,4 @@ require "coderelated.lsp"
 
 -- themes
 -- vim.cmd "colorscheme onedark"
-vim.cmd "colorscheme catppuccin-mocha"
-
+--vim.cmd "colorscheme catppuccin-mocha"

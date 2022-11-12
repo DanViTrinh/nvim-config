@@ -50,12 +50,6 @@ return packer.startup(function(use)
   use {
     "catppuccin/nvim",
     as = "catppuccin",
-    config = function()
-        require("catppuccin").setup {
-            flavour = "macchiato" -- mocha, macchiato, frappe, latte
-        }
-        vim.api.nvim_command "colorscheme catppuccin"
-    end
   }
   use {
     'nvim-lualine/lualine.nvim',
@@ -65,6 +59,16 @@ return packer.startup(function(use)
   use "xiyaowong/virtcolumn.nvim"
   use 'nvim-tree/nvim-web-devicons'
   use "lukas-reineke/indent-blankline.nvim"
+  use { 
+    'olivercederborg/poimandres.nvim',
+    config = function()
+      require('poimandres').setup {
+        -- leave this setup function empty for default config
+        -- or refer to the configuration section
+        -- for configuration options
+      }
+    end
+  }
 
   -- treesitter
   use {
