@@ -1,3 +1,4 @@
+--[[
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = { -- :h background
@@ -5,7 +6,7 @@ require("catppuccin").setup({
         dark = "mocha",
     },
     compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
-    transparent_background = true,
+    transparent_background = false ,
     term_colors = false,
     dim_inactive = {
         enabled = false,
@@ -37,3 +38,5 @@ require("catppuccin").setup({
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
 })
+--]]
+vim.cmd "colorscheme poimandres"
