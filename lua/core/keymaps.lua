@@ -70,3 +70,11 @@ vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
 keymap("n", "<A-7>","{",opts) -- remapping alt keys to {
 keymap("n", "<A-0>","}",opts) -- remapping alt keys to }
 
+keymap("n", "J","5j",opts) -- faster movement
+keymap("n", "K","5k",opts) -- faster movement 
+keymap("n", "<C-k>","<C-y>",opts) -- faster movement
+keymap("n", "<C-j>","<C-e>",opts) -- faster movement
+
+keymap("n", "<A-j>","J",opts) -- replace J
+
+
