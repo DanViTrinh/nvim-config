@@ -18,6 +18,8 @@ vim.g.maplocalleader = " "
 
 -- insert mode
 keymap("i","jk","<ESC>",opts)
+keymap("i","Jk","<ESC>",opts)
+
 
 -- fix autopair
 --keymap("i", "<A-7>","{",opts) -- remapping alt keys to {
