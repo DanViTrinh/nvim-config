@@ -37,11 +37,9 @@ keymap("i","Jk","<ESC>",opts)
 -- fix autopair find a better solution maybe? 
 -- google tui input and several mod at once 
 -- https://stackoverflow.com/questions/1456026/can-vim-commands-be-mapped-to-key-combinations-with-1-modifier-e-g-ctrl-alt-v
-keymap("i", "<A-7>","{}<Left>",opts) -- remapping alt keys to {
-keymap("i", "<A-0>","}",opts) -- remapping alt keys to }
-keymap("i", "<A-8>","[",opts) -- remapping alt keys to [
-keymap("i", "<A-9>","]",opts) -- remapping alt keys to ]
-
+-- keymap("i", "<A-7>","{}<Left>",opts) -- remapping alt keys to { keymap("i", "<A-0>","}",opts) -- remapping alt keys to }
+-- keymap("i", "<A-8>","[",opts) -- remapping alt keys to [
+-- keymap("i", "<A-9>","]",opts) -- remapping alt keys to ]
 
 
 -- normal
@@ -69,8 +67,8 @@ keymap('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 -- to escape terminal 
 vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
 
-keymap("n", "<A-7>","{",opts) -- remapping alt keys to {
-keymap("n", "<A-0>","}",opts) -- remapping alt keys to }
+-- keymap("n", "<A-7>","{",opts) -- remapping alt keys to {
+-- keymap("n", "<A-0>","}",opts) -- remapping alt keys to }
 
 keymap("n", "J","5j",opts) -- faster movement
 keymap("n", "K","5k",opts) -- faster movement 
