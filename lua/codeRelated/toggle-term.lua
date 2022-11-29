@@ -17,6 +17,5 @@ require("toggleterm").setup{
   -- size can be a number or function which is passed the current terminal
   size = 40,
   direction = "vertical",
-  open_mapping = [[<c-t>]],
-
+  open_mapping = [[<Leader>t]],
 }
