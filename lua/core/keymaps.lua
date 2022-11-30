@@ -20,28 +20,6 @@ vim.g.maplocalleader = " "
 keymap("i","jk","<ESC>",opts)
 keymap("i","Jk","<ESC>",opts)
 
-
--- fix autopair
---keymap("i", "<A-7>","{",opts) -- remapping alt keys to {
---keymap("i", "<A-0>","}",opts) -- remapping alt keys to }
---keymap("i", "<A-8>","[",opts) -- remapping alt keys to [
---keymap("i", "<A-9>","]",opts) -- remapping alt keys to ]
-
--- remap map keys to get used to 
--- keymap("i", "|","{}<Left>",opts) -- remapping alt keys to {
--- keymap("i", "≈","}",opts) -- remapping alt keys to }
--- keymap("i", "'","|",opts)
--- keymap("i", "@","'",opts)
--- keymap("i", "™","@",opts)
-
--- fix autopair find a better solution maybe? 
--- google tui input and several mod at once 
--- https://stackoverflow.com/questions/1456026/can-vim-commands-be-mapped-to-key-combinations-with-1-modifier-e-g-ctrl-alt-v
--- keymap("i", "<A-7>","{}<Left>",opts) -- remapping alt keys to { keymap("i", "<A-0>","}",opts) -- remapping alt keys to }
--- keymap("i", "<A-8>","[",opts) -- remapping alt keys to [
--- keymap("i", "<A-9>","]",opts) -- remapping alt keys to ]
-
-
 -- normal
 keymap("n" , "<Leader>e", ":NvimTreeToggle<CR>",opts)
 
@@ -50,8 +28,9 @@ keymap("n" , "<Leader>e", ":NvimTreeToggle<CR>",opts)
 --https://github.com/hrsh7th/nvim-cmp/issues/429
 keymap("n", "<Leader>tc",":lua require('cmp').setup {enabled = false}<CR>",opts)
 
--- quit 
+-- save
 keymap("n", "<Leader>w",":w<CR>",opts)
+-- quit 
 keymap("n", "<Leader>q",":q<CR>",opts)
 
 --tab and windows 
@@ -66,11 +45,9 @@ vim.g.winresizer_start_key = "<Leader>m"
 keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
 keymap('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 
+
 -- to escape terminal 
 vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
-
--- keymap("n", "<A-7>","{",opts) -- remapping alt keys to {
--- keymap("n", "<A-0>","}",opts) -- remapping alt keys to }
 
 keymap("n", "J","5j",opts) -- faster movement
 keymap("n", "K","5k",opts) -- faster movement 
