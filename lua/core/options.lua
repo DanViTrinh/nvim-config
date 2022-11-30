@@ -6,8 +6,8 @@ vim.opt.cursorline = true -- highlight the current line
 
 vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
 
---vim.opt.signcolumn = "yes:1" -- https://stackoverflow.com/questions/18319284/vim-sign-column-toggle
-                            -- https://www.reddit.com/r/neovim/comments/xq5dm3/nvimcmp_disable_syntax_check_column/
+-- https://stackoverflow.com/questions/18319284/vim-sign-column-toggle
+-- https://www.reddit.com/r/neovim/comments/xq5dm3/nvimcmp_disable_syntax_check_column/
 vim.opt.signcolumn = "yes"
 
 vim.opt.expandtab = true
@@ -21,14 +21,14 @@ vim.opt.mouse ="a"
 
 vim.opt.colorcolumn = "80"
 
-vim.wo.fillchars = 'eob: ' -- to remove tilde 
+vim.o.fillchars = 'eob: ' -- to remove tilde
 
 -- uncomment for pwsh
 vim.opt.shell ="pwsh"
 
 -- https://www.reddit.com/r/neovim/comments/q4lzki/client_1_quit_with_exit_code_1_and_signal_0_when/
 -- suppress error messages from lang servers
-vim.notify = function(msg, log_level, _opts)
+vim.notify = function(msg, log_level)
     if msg:match("exit code") then
         return
     end
