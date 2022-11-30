@@ -55,11 +55,12 @@ keymap("n", "<Leader>w",":w<CR>",opts)
 keymap("n", "<Leader>q",":q<CR>",opts)
 
 --tab and windows 
-keymap("n", "<Leader>h",":bp<CR>",opts)
-keymap("n", "<Leader>l",":bn<CR>",opts)
+keymap("n", "<A-h>",":bp<CR>",opts)
+keymap("n", "<A-l>",":bn<CR>",opts)
 keymap('n', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
 keymap('n', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 vim.g.winresizer_start_key = "<Leader>m"
+
 
 --terminal (toggle term )
 keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
