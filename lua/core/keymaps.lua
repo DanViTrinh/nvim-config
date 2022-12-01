@@ -31,7 +31,7 @@ keymap("n", "<Leader>tc",":lua require('cmp').setup {enabled = false}<CR>",opts)
 -- save
 keymap("n", "<Leader>w",":w<CR>",opts)
 -- quit 
-keymap("n", "<Leader>q",":q<CR>",opts)
+keymap("n", "<Leader>q","<cmd>q<CR>",opts)
 
 --tab and windows 
 keymap("n", "<A-h>",":bp<CR>",opts)
