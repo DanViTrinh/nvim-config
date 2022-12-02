@@ -38,8 +38,8 @@ keymap("n", "<C-q>","<cmd>bdelete<cr>",opts)
 
 
 --tab and windows 
-keymap("n", "<A-h>",":bp<CR>",opts)
-keymap("n", "<A-l>",":bn<CR>",opts)
+keymap("n", "˛",":bp<CR>",opts)
+keymap("n", "ﬁ",":bn<CR>",opts)
 keymap('n', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
 keymap('n', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 vim.g.winresizer_start_key = "<Leader>m"
@@ -58,6 +58,6 @@ keymap("n", "K","5k",opts) -- faster movement
 keymap("n", "<C-k>","<C-y>",opts) -- faster movement
 keymap("n", "<C-j>","<C-e>",opts) -- faster movement
 
-keymap("n", "<A-j>","J",opts) -- replace J
+keymap("n", "√","J",opts) -- replace J
 
 
