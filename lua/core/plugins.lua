@@ -47,6 +47,7 @@ return packer.startup(function(use)
 
   --Asthetics
   -- use "lunarvim/colorschemes"
+  use 'nvim-tree/nvim-web-devicons'
   use {
     "catppuccin/nvim",
     as = "catppuccin",
@@ -55,9 +56,9 @@ return packer.startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'kyazdani42/nvim-web-devicons'}
+  -- use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'kyazdani42/nvim-web-devicons'}
+  use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
   use "xiyaowong/virtcolumn.nvim"
-  use 'nvim-tree/nvim-web-devicons'
   use "lukas-reineke/indent-blankline.nvim"
   use {
     'olivercederborg/poimandres.nvim',

@@ -1,7 +1,7 @@
 
 require('lualine').setup()
 
-require("bufferline").setup{}
+-- require("bufferline").setup{}
 
 
 vim.g.virtcolumn_char = '▕' -- char to display the line
