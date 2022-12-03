@@ -62,4 +62,4 @@ keymap("n", "<A-j>","<C-e>",opts) -- faster movement
 
 keymap("n", "<Leader>j","J",opts) -- replace J
 
-
+keymap("n", "<Leader>z",":ZenMode<CR>",opts) -- replace J
