@@ -18,4 +18,7 @@ require("toggleterm").setup{
   size = 40,
   direction = "vertical",
   open_mapping = [[<C-p>]],
+  on_open = function(t) -- make virt column not show in toggleterm
+      vim.wo[t.window].cc = ''
+    end
 }
