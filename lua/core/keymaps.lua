@@ -26,7 +26,7 @@ keymap("n" , "<Leader>e", ":NvimTreeToggle<CR>",opts)
 -- https://www.reddit.com/r/neovim/comments/rh0ohq/nvimcmp_temporarily_disable_autocompletion/
 -- look at this: 
 --https://github.com/hrsh7th/nvim-cmp/issues/429
-keymap("n", "<Leader>tc",":lua require('cmp').setup {enabled = false}<CR>",opts)
+keymap("n", "<Leader>ac",":lua require('cmp').setup {enabled = false}<CR>",opts)
 
 -- save
 keymap("n", "<Leader>w",":w<CR>",opts)
