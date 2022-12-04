@@ -63,16 +63,11 @@ vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
 
 keymap("n", "J","5j",opts) -- faster movement
 keymap("n", "K","5k",opts) -- faster movement 
-<<<<<<< HEAD
 keymap("n", "<A-k>","<C-y>",opts) -- faster movement
 keymap("n", "<A-j>","<C-e>",opts) -- faster movement
-=======
-keymap("n", "<C-k>","<C-y>",opts) -- faster movement
-keymap("n", "<C-j>","<C-e>",opts) -- faster movement
 
 keymap("n", "√","J",opts) -- replace J
->>>>>>> origin/mac
 
-keymap("n", "<Leader>j","J",opts) -- replace J
+--keymap("n", "<Leader>j","J",opts) -- replace J
 
 keymap("n", "<Leader>z",":ZenMode<CR>",opts) -- replace J
