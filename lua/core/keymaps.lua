@@ -38,8 +38,8 @@ keymap("n", "<C-q>","<cmd>bdelete<cr>",opts)
 
 
 --tab and windows 
-keymap("n", "<A-h>",":bp<CR>",opts)
-keymap("n", "<A-l>",":bn<CR>",opts)
+keymap("n", "˛",":bp<CR>",opts)
+keymap("n", "ﬁ",":bn<CR>",opts)
 keymap('n', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
 keymap('n', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 keymap('n', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
@@ -63,8 +63,15 @@ vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
 
 keymap("n", "J","5j",opts) -- faster movement
 keymap("n", "K","5k",opts) -- faster movement 
+<<<<<<< HEAD
 keymap("n", "<A-k>","<C-y>",opts) -- faster movement
 keymap("n", "<A-j>","<C-e>",opts) -- faster movement
+=======
+keymap("n", "<C-k>","<C-y>",opts) -- faster movement
+keymap("n", "<C-j>","<C-e>",opts) -- faster movement
+
+keymap("n", "√","J",opts) -- replace J
+>>>>>>> origin/mac
 
 keymap("n", "<Leader>j","J",opts) -- replace J
 
