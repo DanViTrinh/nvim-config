@@ -49,7 +49,8 @@ vim.g.winresizer_start_key = "<Leader>m"
 
 --terminal (toggle term )
 keymap('n', '<Leader>tf', ":ToggleTerm direction=float<CR>", opts)
-keymap('n', '<Leader>th', ":ToggleTerm direction=horizontal<CR>", opts)
+keymap('n', '<Leader>th', ":ToggleTerm size=10 direction=horizontal<CR>", opts)
+keymap('n', '<Leader>tv', ":ToggleTerm size=40 direction=vertical<CR>", opts)
 
 keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
 keymap('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
