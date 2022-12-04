@@ -48,8 +48,13 @@ vim.g.winresizer_start_key = "<Leader>m"
 
 
 --terminal (toggle term )
+keymap('n', '<Leader>tf', ":ToggleTerm direction=float<CR>", opts)
+keymap('n', '<Leader>th', ":ToggleTerm direction=horizontal<CR>", opts)
+
 keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
 keymap('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
+keymap('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
+keymap('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
 
 
 -- to escape terminal 
