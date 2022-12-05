@@ -1,8 +1,7 @@
 require "core.options"
 require "core.keymaps"
 require "core.plugins"
--- require "core.nvim-tree"
-require "core.neotree"
+require "core.nvim-tree"
 require "core.toggle-term"
 
 require "codeRelated.cmp"
