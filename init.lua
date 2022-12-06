@@ -12,4 +12,5 @@ require "codeRelated.treesitter"
 require "aesthetics.theme"
 require "aesthetics.generic"
 require "aesthetics.barbar"
+require "aesthetics.lualine"
 
