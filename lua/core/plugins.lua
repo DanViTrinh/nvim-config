@@ -46,6 +46,14 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   --Asthetics
+
+  use "RRethy/vim-illuminate"
+  use {
+      'goolord/alpha-nvim',
+      config = function ()
+          require'alpha'.setup(require'alpha.themes.dashboard'.config)
+      end
+  }
   -- use "lunarvim/colorschemes"
   use 'nvim-tree/nvim-web-devicons'
   use {
