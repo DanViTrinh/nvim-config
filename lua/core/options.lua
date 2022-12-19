@@ -24,7 +24,7 @@ vim.opt.colorcolumn = "80"
 vim.o.fillchars = 'eob: ' -- to remove tilde
 
 -- uncomment for pwsh
--- vim.opt.shell ="pwsh"
+vim.opt.shell ="pwsh"
 
 -- https://www.reddit.com/r/neovim/comments/q4lzki/client_1_quit_with_exit_code_1_and_signal_0_when/
 -- suppress error messages from lang servers
