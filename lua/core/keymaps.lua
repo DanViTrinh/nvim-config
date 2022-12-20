@@ -40,8 +40,8 @@ keymap("n", "<C-q>","<cmd>bdelete<cr>",opts)
 --tab and windows 
 -- keymap("n", "˛",":bp<CR>",opts) -- for mac  
 -- keymap("n", "ﬁ",":bn<CR>",opts) -- for mac
-keymap("n", "<A-h>",":bp<CR>",opts)
-keymap("n", "<A-l>",":bn<CR>",opts)
+keymap("n", "<A-h>",":BufferPrevious<CR>",opts)
+keymap("n", "<A-l>",":BufferNext<CR>",opts)
 keymap('n', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
 keymap('n', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 keymap('n', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
