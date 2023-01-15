@@ -8,6 +8,7 @@ require "codeRelated.cmp"
 require "codeRelated.comment"
 require "codeRelated.lsp"
 require "codeRelated.treesitter"
+require "codeRelated.vim-illuminate"
 
 require "aesthetics.theme"
 require "aesthetics.generic"
