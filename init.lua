@@ -23,4 +23,11 @@ if not vim.g.vscode then
 end
 
 
+-- vscode
+if vim.g.vscode then
+  require "vscode.keymaps.normal"
+end
+
+
+
 
