@@ -22,3 +22,12 @@ require("toggleterm").setup{
       vim.wo[t.window].cc = ''
     end
 }
+
+-- Terminal keymaps
+local opts = {noremap = true , silent = true}
+local keymap = vim.api.nvim_set_keymap
+keymap("","<Space>","<Nop>" , opts)
+
+keymap('n', '<Leader>tf', ":ToggleTerm direction=float<CR>", opts)
+keymap('n', '<Leader>th', ":ToggleTerm size=10 direction=horizontal<CR>", opts)
+keymap('n', '<Leader>tv', ":ToggleTerm size=40 direction=vertical<CR>", opts)
