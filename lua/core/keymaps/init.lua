@@ -17,21 +17,28 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- insert mode
-keymap("i","jk","<ESC>",opts)
-keymap("i","Jk","<ESC>",opts)
+
+-- For everyone
+require "core.keymaps.normal"
+if not vim.g.vscode then
+  require "core.keymaps.plugin-keymaps"
+  keymap("i","jk","<ESC>",opts)
+  keymap("i","Jk","<ESC>",opts)
 
 
-keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
-keymap('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
-keymap('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
-keymap('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
+  keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
+  keymap('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
+  keymap('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
+  keymap('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
 
 
--- to escape terminal 
-vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+  -- to escape terminal 
+  vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
 
-keymap("v", "J","5j",opts) -- faster movement
-keymap("v", "K","5k",opts) -- faster movement 
-keymap("v", "<A-k>","<C-y>",opts) -- faster movement
-keymap("v", "<A-j>","<C-e>",opts) -- faster movement
+  keymap("v", "J","5j",opts) -- faster movement
+  keymap("v", "K","5k",opts) -- faster movement 
+  keymap("v", "<A-k>","<C-y>",opts) -- faster movement
+  keymap("v", "<A-j>","<C-e>",opts) -- faster movement
+end
+
 

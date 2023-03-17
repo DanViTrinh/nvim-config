@@ -1,11 +1,9 @@
 -- For everyone 
-require "core.keymaps.normal"
+require "core.keymaps"
 
 -- For non vscode users 
 if not vim.g.vscode then
-  require "core.keymaps"
   require "core.options"
-  require "core.plugin-keymaps"
   require "core.plugins"
   require "core.nvim-tree"
   require "core.toggle-term"
