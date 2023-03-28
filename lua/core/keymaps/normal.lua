@@ -21,12 +21,14 @@ if vim.fn.has('macunix') then
   keymap("n", "ﬁ",":bn<CR>",opts) -- for mac
   keymap("n", "ª","<C-y>",opts) -- faster movement
   keymap("n", "√","<C-e>",opts) -- faster movement
-else
-  keymap("n", "<A-h>",":BufferPrevious<CR>",opts)
-  keymap("n", "<A-l>",":BufferNext<CR>",opts)
-  keymap("n", "<A-k>","<C-y>",opts) -- faster movement
-  keymap("n", "<A-j>","<C-e>",opts) -- faster movement
 end
+
+-- For everyone 
+keymap("n", "<A-h>",":BufferPrevious<CR>",opts)
+keymap("n", "<A-l>",":BufferNext<CR>",opts)
+keymap("n", "<A-k>","<C-y>",opts) -- faster movement
+keymap("n", "<A-j>","<C-e>",opts) -- faster movement
+
 
 
 keymap("n", "J","5j",opts) -- faster movement
